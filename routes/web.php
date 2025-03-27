@@ -16,6 +16,7 @@ Route::view('dashboard', 'dashboard')
 Route::middleware(['auth'])->group(function () {
     Route::view('users', 'users.index')->name('users');
     Route::view('form-validate', 'form-validate.index')->name('form-validate');
+    Route::view('filters', 'filters.index')->name('filters');
 
     Route::redirect('settings', 'settings/profile');
 
